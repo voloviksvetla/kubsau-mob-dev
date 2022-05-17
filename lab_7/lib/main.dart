@@ -67,6 +67,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    HttpOverrides.global = MyHttpOverrides();
     const appTitle = 'Лента новойтей КубГАУ';
     return MaterialApp(
       debugShowCheckedModeBanner: false,
